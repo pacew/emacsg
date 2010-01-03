@@ -11,8 +11,16 @@ pace@alum.mit.edu
 
 Brief instructions:
 
+create keys.el with setq's for *oauth_consumer_key* and
+*oauth_consumer_secret* for your google credentials.  I did
+early work with these set to "anonymous" and "anonymous", so you
+might be able to get started that way.
+
+
 (load "hmac-sha1.el")
 (load "emacsg.el")
+(load "keys.el")
+
 (oauth1)
 [this launches a browser for google login - pick up the verification key with the mouse]
 (oauth2 "verificationkey")

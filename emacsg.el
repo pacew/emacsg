@@ -32,7 +32,7 @@
   (cdr (assoc key alist)))
 
 
-(defvar *currnet_oauth_token* nil)
+(defvar *current_oauth_token* nil)
 (defvar *current_oauth_token_secret* nil)
 
 ;;; these are setq in the file keys.el (not under source control...)
