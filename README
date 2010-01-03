@@ -1,0 +1,33 @@
+Here are some raw materials on the way to allowing emacs to read and save
+files at docs.google.com.  It's pretty messy at this point, but at least
+I've sorted out which keys go into which slots for each phase of the
+oauth protocol.  If you pick this up and press forward some more, let
+me know how you make out.
+
+Pace Willisson
+pace@alum.mit.edu
+1/3/2010
+
+
+Brief instructions:
+
+(load "hmac-sha1.el")
+(load "emacsg.el")
+(oauth1)
+[this launches a browser for google login - pick up the verification key with the mouse]
+(oauth2 "verificationkey")
+(gdocs-list)
+
+look in the buffer "last" and pick the docid of one of your documents -
+edit it into the definition of (get-doc) in emacsg.el, then
+
+(get-doc)
+
+create an empty buffer called "new"
+
+(conv)
+
+look in the buffer "new"
+
+
+
